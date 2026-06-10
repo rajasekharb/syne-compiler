@@ -1,16 +1,92 @@
-# Compiled class file
+
+# ==============================================================================
+# 1. OPERATING SYSTEMS
+# ==============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+$RECYCLE.BIN/
+desktop.ini
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# 2. IDEs & EDITORS
+# ==============================================================================
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (IntelliJ, PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+out/
+gen/
+
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Vim / Emacs
+*~
+*.swp
+*.swo
+*.swn
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# ==============================================================================
+# 3. POLYGLOT LANGUAGES & BUILD SYSTEMS
+# ==============================================================================
+# Java & JVM
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
 *.class
-
-# Log file
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.nar
@@ -19,6 +95,105 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Node & JavaScript/TypeScript
+node_modules/
+jspm_packages/
+web_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm/
+.eslintcache
+.stylelintcache
+dist/
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Go
+/bin/
+/pkg/
+*.test
+
+# C / C++ / Rust
+*.o
+*.ko
+*.obj
+*.elf
+*.ilk
+*.map
+*.exp
+*.gch
+*.pch
+*.lib
+*.a
+*.la
+*.lo
+*.dll
+*.so
+*.so.*
+*.dylib
+*.exe
+*.out
+*.app
+*.ipa
+*.dSYM/
+/target/ # Rust Cargo build output
+
+# ==============================================================================
+# 4. SYNE COMPILER SPECIFIC
+# ==============================================================================
+# VitePress Documentation (Locally generated assets)
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# Local Test Outputs & Artifacts
+# (Prevents accidentally committing generated slices/graphs during local runs)
+*.slice
+*.strata
+# If you want to keep example files, you can explicitly track them later using:
+# git add -f example.slice
+
+# ==============================================================================
+# 5. SECRETS & ENVIRONMENT VARIABLES (CRITICAL)
+# ==============================================================================
+.env
+.env.test
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.cert
+*.p12
+*.pkcs12
+*.pfx
+secrets.json
+auth.json
